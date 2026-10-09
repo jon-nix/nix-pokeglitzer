@@ -20,7 +20,7 @@
           buildDotnetModule,
           fetchFromGitHub,
           dotnetCorePackages,
-
+          wrapGAppsHook,
           libX11,
           libICE,
           libSM,
@@ -42,6 +42,9 @@
           nugetDeps = ./deps.nix;
           dotnet-sdk = dotnetCorePackages.sdk_8_0;
           dotnet-runtime = dotnetCorePackages.runtime_8_0;
+          nativeBuildInputs = [
+            wrapGAppsHook
+          ];
           runtimeDeps = [
             libX11
             libICE
