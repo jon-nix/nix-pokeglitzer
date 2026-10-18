@@ -4,5 +4,5 @@ A flake providing the [PokeGlitzer](https://github.com/E-Sh4rk/PokeGlitzer) prog
 
 ## Updating
 - Update the git revision + sha256 hash
-- Re-generate the dotnet dependencies with `nix run .#fetch-deps -- deps.nix`
+- Re-generate the dotnet dependencies with `nix run .#fetch-deps -- deps.json`
 - Optional: Update the nixpkgs version used by the flake.
