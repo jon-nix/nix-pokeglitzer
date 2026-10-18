@@ -31,11 +31,11 @@
               fontconfig,
             }:
             buildDotnetModule rec {
-              pname = "pokeglitzer";
+              pname = "PokeGlitzer";
               version = "1.3.9";
               src = fetchFromGitHub {
                 owner = "E-Sh4rk";
-                repo = "PokeGlitzer";
+                repo = pname;
                 rev = "v${version}";
                 sha256 = "sha256-M0/mEmA3+PfKZM0A2DdTbGihdrdbmatMyIZoGPWdsF0=";
               };
